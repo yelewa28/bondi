@@ -1,0 +1,166 @@
+:root {
+    --dark-color: #19283f;
+    --green-color: #33d1cc;
+    --red-color: #ff3150;
+    --yellow-color: #ffc400;
+    --section-color: #eff7fa;
+}
+::-webkit-scrollbar {
+    width: 15px;
+}
+::-webkit-scrollbar-track {
+    background-color: var(--section-color);
+}
+::-webkit-scrollbar-thumb {
+    background-color: var(--red-color);
+}
+::-webkit-scrollbar-thumb:hover {
+    background-color: #e92f4b;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+}
+.main-btn {
+    color: var(--yellow-color);
+    background-color: var(--red-color);
+}
+.main-btn:hover {
+    background-color: #e92f4b !important;
+    color: var(--yellow-color) !important;
+}
+.main-title::before {
+    content: "";
+    background-color: var(--green-color);
+    width: 13%;
+    height: 2px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+nav {
+    background-color: var(--dark-color);
+}
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link:hover {
+    color: var(--green-color) !important;
+}
+.navbar-toggler:focus {
+    box-shadow: unset;
+}
+nav .search {
+    border-left-color: var(--green-color) !important;
+}
+nav .search svg {
+    color: var(--green-color);
+}
+.landing {
+    min-height: calc(100vh - 72px);
+    background-color: var(--dark-color);
+}
+.features .icon-holder {
+    height: 200px;
+}
+.features .icon-holder svg {
+    left: 50%;
+    transform: translateX(-50%);
+}
+.features .icon-holder .number {
+    color: var(--section-color);
+}
+.features .icon-holder .icon {
+    color: var(--green-color);
+}
+.features .feat h3 {
+    color: var(--yellow-color);
+}
+.portfolio {
+    background-color: var(--section-color);
+}
+.portfolio ul li:hover {
+    color: var(--red-color);
+}
+.portfolio ul li.active {
+    background-color: var(--red-color);
+    color: var(--yellow-color);
+}
+.portfolio .row .box img {
+    transition: 0.3s;
+}
+.portfolio .row .box img:hover {
+    transform: scale(1.3);
+}
+.about .description {
+    max-width: 500px;
+}
+.team {
+    background-color: var(--section-color);
+}
+.team h2 {
+    color: var(--yellow-color);
+}
+.team .team-box h4 {
+    background-color: var(--green-color);
+}
+.project {
+    background-color: var(--dark-color);
+}
+.contact {
+    background-color: var(--yellow-color);
+}
+.contact input::placeholder {
+    color: #fff;
+}
+.contact input:focus {
+    outline: none;
+}
+.contact .sec-btn {
+    background-color: var(--dark-color);
+    color: var(--yellow-color);
+}
+.footer {
+    background-color: var(--dark-color);
+}
+.footer .copy-name {
+    color: var(--green-color);
+}
+.footer .copy-company {
+    color: var(--yellow-color);
+}
+.footer .icons svg:first-child {
+    background-color: #1877f2;
+} 
+.footer .icons svg:first-child {
+    background-color: #1877f2;
+} 
+.footer .icons svg:nth-child(2) {
+    background-color: #1da1f2;
+} 
+.footer .icons svg:nth-child(3) {
+    background-color: #0077b5;
+} 
+.footer .icons svg:nth-child(4) {
+    background-color: #ff0000;
+} 
+.scroll-button {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    background-color: var(--red-color);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.scroll-button:hover {
+    background-color: #e92f4b;
+}
+.scroll-button svg {
+    font-size: 18px;
+    color: var(--yellow-color);
+}
